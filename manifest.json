@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name": "LiteRider",
+  "version": "1.0",
+
+  "description": "Сжимает текст с помощью AI",
+
+  "icons": {
+    "48": "./icons/icon.svg"
+  },
+   "browser_action": {
+    "default_icon": {
+      "32": "./icons/icon.svg"
+    },
+    "default_title": "LiteRider",
+    "default_popup": "index.html"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["popup.js"],
+      "css": ["popup.css"]
+    }
+  ],
+  "permissions": [
+  "activeTab",
+  "storage",
+  "http://localhost:3000/*"
+]
+}

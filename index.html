@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="icon">
+            <img src="./icons/icon.svg"  alt="icon">
+        </div>
+        <div class="theme">
+            <div class="oval">
+                <div class="krug">
+                    <img src="./icons/sun.svg" alt="sun">
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+    <main>
+        <div class="range">
+            <div class="range-slider">
+                <label for="range">Выберите процент сжатия текста:</label><br />
+                <input
+                    type="range"
+                    min="20"
+                    max="80"
+                    value="0"
+                    id="range"
+                    step="30"
+                />
+                <div class="sliderticks">
+                    <span>20</span>
+                    <span>50</span>
+                    <span>80</span>
+                </div>
+            </div>
+        </div>
+        <div class="btns">
+            <button>Очистить</button>
+            <button>Выделить</button>
+            <button>Cохранить</button>
+        </div>
+    </main>
+  <script src="main.js"></script>
+</body>
+</html>

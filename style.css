@@ -1,4 +1,4 @@
-* {
+/* {
     box-sizing: border-box;
 }
 
@@ -104,7 +104,7 @@ input[type="range"]::-webkit-slider-thumb {
   transition: .2s ease-in-out;
 }
 
-/* Thumb: Firefox */
+/* Thumb: Firefox 
 input[type="range"]::-moz-range-thumb {
   height: 15px;
   width: 15px;
@@ -124,7 +124,7 @@ input[type="range"]:focus::-webkit-slider-thumb {
   box-shadow: 0 0 0 13px rgba(61, 70, 237, .1) 
 }
 
-/* Hover, active & focus Thumb: Firfox */
+/* Hover, active & focus Thumb: Firfox 
 input[type="range"]::-moz-range-thumb:hover {
   box-shadow: 0 0 0 10px rgba(61, 70, 237, .05)
 }
@@ -180,7 +180,7 @@ h1 {
 
 .btns {
     display: flex;
-    justify-content: space-around;
+    justify-content: center; 
     padding-top: 50px;
 }
 
@@ -196,4 +196,195 @@ h1 {
     background-color: #3D46ED;
     color: #fff;
     padding: 5px 10px;
+}
+
+#startBtn {
+  width: 40px;
+  height: 30px;
+  font-size: 20px;
+}
+
+#startBtn {
+    flex: 1;                  
+    max-width: 150px;        
+    max-height: 70px;
+    padding: 10px 20px;       
+    font-size: 16px;         
+    font-weight: 600;         
+    transition: all 0.2s ease-in-out; 
+    text-align: center;
+    align-items: center;
+    align-items: baseline;
+}*/
+
+/* Измененный стиль для кнопки в состоянии "Стоп" (белый фон, синяя рамка) 
+#startBtn.active {
+    background-color: white !important;
+    color: #3D46ED !important;
+    border: 2px solid #3D46ED !important;
+}
+
+/* Стили при наведении на увеличенную кнопку "Стоп" 
+#startBtn.active:hover {
+    background-color: rgba(61, 70, 237, 0.05) !important;
+}
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 370px;
+    height: 400px;
+    background-color: white;
+    border: 2px solid #3D46ED;
+    border-radius: 25px;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui;
+}
+
+header {
+    height: 60px;
+    width: 100%;
+    border-bottom: 2px solid #3D46ED;
+    align-items: center;
+    display: block;
+    overflow-x: hidden;
+}
+
+.header {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.oval {
+    width: 40px;
+    height: 20px;
+    border: 2px solid #3D46ED;
+    border-radius: 55px;
+    align-items: center;
+}
+
+.krug {
+    width: 17px;
+    height: 17px;
+    background-color: #3D46ED;
+    border-radius: 50%;
+    align-items: center;
+    text-align: center;
+}
+
+.krug img {
+    width: 15px;
+    height: 15px;
+}
+
+main {
+    padding-top: 50px;
+}
+
+.range-slider {
+  flex: 1;
+}
+
+.sliderticks {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.sliderticks span {
+  display: flex;
+  justify-content: center;
+  width: 1px;
+  height: 10px;
+  background: #d3d3d3;
+  line-height: 40px;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none; 
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  border-radius: 15px;
+  height: 6px;
+  background: #ccc;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none; 
+  height: 15px;
+  width: 15px;
+  background-color: #3D46ED; 
+  border-radius: 50%;
+  border: none;
+  transition: .2s ease-in-out;
+}
+
+input[type="range"]::-moz-range-thumb {
+  height: 15px;
+  width: 15px;
+  background-color: #3D46ED; 
+  border-radius: 50%;
+  border: none;
+  transition: .2s ease-in-out;
+}
+
+.range {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+  height: 8rem;
+  width: 80%;
+  background: #fff;
+  padding: 0px 10px;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    width: 100%;
+}
+
+#startBtn {
+    background-color: #3D46ED !important;
+    color: #ffffff !important;
+    border: 2px solid #3D46ED !important;
+    border-radius: 15px;
+    padding: 12px 35px;   
+    font-size: 16px;         
+    font-weight: 600;        
+    cursor: pointer;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+    display: inline-block;
+}
+
+#startBtn.active {
+    background-color: white !important;
+    color: #3D46ED !important;
+    border: 2px solid #3D46ED !important;
+}
+
+#startBtn.active:hover {
+    background-color: rgba(61, 70, 237, 0.05) !important;
 }

@@ -2,21 +2,21 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="header">
             <div class="icon">
-            <img src="./icons/icon.svg"  alt="icon">
-        </div>
-        <div class="theme">
-            <div class="oval">
-                <div class="krug">
-                    <img src="./icons/sun.svg" alt="sun">
+                <img src="icons/icon.svg" alt="icon">
+            </div>
+            <div class="theme">
+                <div class="oval">
+                    <div class="krug">
+                        <img src="icons/sun.svg" alt="sun">
+                    </div>
                 </div>
             </div>
-        </div>
         </div>
     </header>
     <main>
@@ -27,7 +27,7 @@
                     type="range"
                     min="20"
                     max="80"
-                    value="0"
+                    value="50"
                     id="range"
                     step="30"
                 />
@@ -39,9 +39,7 @@
             </div>
         </div>
         <div class="btns">
-            <button>Очистить</button>
-            <button>Выделить</button>
-            <button>Cохранить</button>
+            <button id="startBtn">Старт</button>
         </div>
     </main>
   <script src="main.js"></script>

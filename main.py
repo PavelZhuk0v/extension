@@ -2,7 +2,7 @@
 from openai import OpenAI
 
 def process_text(text, reduction):
-    api_key = "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"
+    api_key = "-"
 
     client = OpenAI(
         base_url="https://openrouter.ai/api/v1",
